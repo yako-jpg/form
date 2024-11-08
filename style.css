@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Gothic A1";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Gothic A1 Regular"), local("GothicA1-Regular"),
+    url("/fonts/Gothic/GothicA1-Regular.woff2") format("woff2"),
+    url("/fonts/Gothic/GothicA1-Regular.woff") format("woff"),
+    url("/fonts/Gothic/GothicA1-Regular.eot") format("eot");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gothic A1";
+    font-weight: 600;
+    font-style: normal;
+    src: local("Gothic A1 Semi Bold"), local("GothicA1-SemiBold"),
+    url("/fonts/Gothic/GothicA1-SemiBold.woff2") format("woff2"),
+    url("/fonts/Gothic/GothicA1-SemiBold.woff") format("woff"),
+    url("/fonts/Gothic/GothicA1-SemiBold.eot") format("eot");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-style: normal;
+    src: local("Open Sans Semi Bold"), local("OpenSans-SemiBold"),
+    url("/fonts/OpenSans/OpenSans-SemiBold.woff") format("woff"),
+    url("/fonts/OpenSans/OpenSans-SemiBold.eot") format("eot"),
+    url("/fonts/OpenSans/OpenSans-SemiBold.ttf") format('truetype');
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #46495c;
+}
+
+.main {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #46495c;
+    margin: 0 15px;
+}
+
+.form {
+    width: 100%;
+    max-width: 728px;
+    min-height: 616px;
+
+    background: #ffffff;
+    border-radius: 18px;
+
+    padding: 64px 124px;
+    margin: 0 auto;
+}
+
+.form__title {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 43px;
+
+    color: #46495c;
+    margin: 0;
+}
+
+.form__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.form__label {
+    font-family: "Gothic A1", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #001c3d;
+    opacity: 0.5;
+    transform: translateY(-50%);
+    transition:  0.5s;
+}
+
+.form__input {
+    width: 100%;
+    height: 64px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #c9ccdd;
+
+    font-size: 22px;
+    outline: none;
+    transition: filter 1.5s ease-out;
+}
+
+.form__input:focus {
+    color: #001c3d;
+    filter: drop-shadow(20px 20px 12px #c1c3c9);
+}
+
+.form__input:hover {
+    outline: 1px solid #c1c3c9;
+}
+
+.form__button {
+    width: 100%;
+    height: 72px;
+    color: #ffffff;
+    background: #ff5721;
+    text-align: center;
+    border-radius: 14px;
+    border: none;
+
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 20px;
+    font-style: normal;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.8s ease-out;
+}
+
+.form__button:hover {
+    opacity: 1;
+}
+
+.form__button:active {
+    transform: scale(0.9);
+    letter-spacing: 2px;
+}
